@@ -11,7 +11,7 @@ import org.springframework.core.io.Resource;
 import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
 
 @Configuration
-@MapperScan(basePackages="com.marodal.memo.*")
+@MapperScan(basePackages="com.marondal.memo.*")
 public class DatabaseConfig {
 	
 	@Bean
