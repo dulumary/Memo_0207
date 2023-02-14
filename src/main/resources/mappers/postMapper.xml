@@ -35,6 +35,7 @@
 			,`userId`
 			, `title`
 			, `content`
+			, `imagePath`
 			, `createdAt`
 			, `updatedAt`
 		FROM 
@@ -53,6 +54,7 @@
 			,`userId`
 			, `title`
 			, `content`
+			, `imagePath`
 			, `createdAt`
 			, `updatedAt`
 		FROM 

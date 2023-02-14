@@ -10,11 +10,13 @@ import org.springframework.web.multipart.MultipartFile;
 
 public class FileManagerService {
 	
+	public static final String FILE_UPLOAD_PATH = "D:\\김인규 강사\\web\\20221011\\springProject\\upload\\images";
+	
 	// 파일을 저장하고, 클라언트에서 접근가능한 주소를 만들어서 리턴하는 기능
 	public static String saveFile(int userId, MultipartFile file) {
 		
 		// 파일 저장
-		String fileUploadPath = "D:\\김인규 강사\\web\\20221011\\springProject\\upload\\images";
+		
 		// 사용자 별로 폴더를 구분한다. 
 		// 사용자 별로 폴더를 새로 만든다
 		// 폴더이름 : userId_현재시간
@@ -24,7 +26,7 @@ public class FileManagerService {
 		String directoryName = "/" + userId + "_" + System.currentTimeMillis() + "/";
 		
 		// 디렉토리 생성
-		String directoryPath = fileUploadPath + directoryName;
+		String directoryPath = FILE_UPLOAD_PATH + directoryName;
 		File directory = new File(directoryPath);
 		if(directory.mkdir() == false) {
 			// 디렉토리 생성 실패 

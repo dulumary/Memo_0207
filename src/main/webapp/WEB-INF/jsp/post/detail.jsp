@@ -29,6 +29,8 @@
 					<textarea rows="10" class="form-control" id="contentInput">${post.content }</textarea>
 				</div>
 				
+				<img src="${post.imagePath }">
+				
 				<div class="d-flex justify-content-between mt-3">
 					<div>
 						<a href="/post/list/view" class="btn btn-info">목록으로</a>
